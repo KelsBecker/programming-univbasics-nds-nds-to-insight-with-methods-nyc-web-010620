@@ -11,20 +11,13 @@ def directors_totals(nds)
   results = {}
   count = 0
   while count < nds.length
-    array.push(movies[count][:worldwide_gross])
+    result[director[:name]] = gross_for_director(director)
     count +=1
   end
+  result
+end 
 
- # result = {}
- # movies = nds[]
- # count = 0 
- # while count < nds.length 
-   
- # count += 1   
-  end
-  
-  nil
-end
+
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
