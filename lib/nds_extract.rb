@@ -11,7 +11,7 @@ def directors_totals(nds)
   results = {}
   count = 0
   while count < nds.size
-    result[director][:name] = gross_for_director(director)
+    results[director][:name] = gross_for_director(director)
   end
   results
   
